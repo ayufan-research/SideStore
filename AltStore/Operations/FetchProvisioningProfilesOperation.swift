@@ -287,6 +287,7 @@ extension FetchProvisioningProfilesOperation
                     
                     let sortedExpirationDates = appIDs.compactMap { $0.expirationDate }.sorted(by: { $0 < $1 })
                     
+#if false
                     if team.type == .free
                     {
                         if requiredAppIDs > availableAppIDs
@@ -301,6 +302,7 @@ extension FetchProvisioningProfilesOperation
                             }
                         }
                     }
+#endif
                     //App ID name must be ascii. If the name is not ascii, using bundleID instead
                     let appIDName: String
                     if !name.allSatisfy({ $0.isASCII }) {
