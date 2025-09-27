@@ -80,8 +80,8 @@
 		A81BF9E72D84CB0C00768940 /* Source17To17_1MigrationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BF9E32D84CB0C00768940 /* Source17To17_1MigrationPolicy.swift */; };
 		A82067842D03DC0600645C0D /* OperatingSystemVersion+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5708416292448DA00D42D34 /* OperatingSystemVersion+Comparable.swift */; };
 		A82067C42D03E0DE00645C0D /* SemanticVersion in Frameworks */ = {isa = PBXBuildFile; productRef = A82067C32D03E0DE00645C0D /* SemanticVersion */; };
-		A8228B5B2D6E2C0C00F7CE0E /* (null) in Sources */ = {isa = PBXBuildFile; };
-		A8228B5D2D6E361F00F7CE0E /* (null) in Sources */ = {isa = PBXBuildFile; };
+		A8228B5B2D6E2C0C00F7CE0E /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		A8228B5D2D6E361F00F7CE0E /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		A859ED5C2D1EE827003DCC58 /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A859ED5B2D1EE80D003DCC58 /* OpenSSL.xcframework */; };
 		A859ED5D2D1EE827003DCC58 /* OpenSSL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A859ED5B2D1EE80D003DCC58 /* OpenSSL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A86315DF2D3EB2DE0048FA40 /* ErrorProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86315DE2D3EB2D80048FA40 /* ErrorProcessing.swift */; };
@@ -3035,7 +3035,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8228B5D2D6E361F00F7CE0E /* (null) in Sources */,
+				A8228B5D2D6E361F00F7CE0E /* BuildFile in Sources */,
 				A8D49F532D3D2F9400844B92 /* ProcessInfo+AltStore.swift in Sources */,
 				A8EA195F2D4982D600DC6322 /* BaseEntity.swift in Sources */,
 				A82067842D03DC0600645C0D /* OperatingSystemVersion+Comparable.swift in Sources */,
@@ -3080,7 +3080,7 @@
 				0E05025C2BEC947000879B5C /* String+SideStore.swift in Sources */,
 				0EE7FDCB2BE8D12B00D1E390 /* ALTLocalizedError.swift in Sources */,
 				BF66EEA92501AEC5007EE018 /* Tier.swift in Sources */,
-				A8228B5B2D6E2C0C00F7CE0E /* (null) in Sources */,
+				A8228B5B2D6E2C0C00F7CE0E /* BuildFile in Sources */,
 				BF66EEDB2501AECA007EE018 /* StoreApp.swift in Sources */,
 				BF66EEDE2501AECA007EE018 /* AppID.swift in Sources */,
 				BF66EECF2501AECA007EE018 /* AltStoreToAltStore2.xcmappingmodel in Sources */,
@@ -3657,6 +3657,7 @@
 				LD_WARN_DUPLICATE_LIBRARIES = YES;
 				LD_WARN_UNUSED_DYLIBS = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.SideStore.SideStore.AltBackup.QSM9W89UQB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3695,12 +3696,13 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "$(inherited)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = QSM9W89UQB;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
